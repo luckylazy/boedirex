@@ -11,71 +11,10 @@
 </head>
 
 <body id="t" class="offline" style="font-family: sans, Arial, sans-serif; font-size: 75%" jstcache="0">
-    <div id="main-frame-error" class="interstitial-wrapper" jstcache="0">
-        <div id="main-content" jstcache="0">
-            <div id="main-message" jstcache="0">
-        <h1 jstcache="0">
-          <span jsselect="heading" jsvalues=".innerHTML:msg" jstcache="10">BoediRex</span>
-          <a id="error-information-button" class="hidden" onclick="toggleErrorInformationPopup();" jstcache="0"></a>
-        </h1>
-        <p jsselect="summary" jsvalues=".innerHTML:msg" jstcache="2">No internet</p>
-        <!--The suggestion list and error code are normally presented inline,
-          in which case error-information-popup-* divs have no effect. When
-          error-information-popup-container has the use-popup-container class, this
-          information is provided in a popup instead.-->
-        <div id="error-information-popup-container" jstcache="0">
-          <div id="error-information-popup" jstcache="0">
-            <div id="error-information-popup-box" jstcache="0">
-              <div id="error-information-popup-content" jstcache="0">
-                <div id="suggestions-list" style="" jsdisplay="(suggestionsSummaryList &amp;&amp; suggestionsSummaryList.length)" jstcache="17">
-                  <p jsvalues=".innerHTML:suggestionsSummaryListHeader" jstcache="19">Rules:</p>
-                  <ul jsvalues=".className:suggestionsSummaryList.length == 1 ? 'single-suggestion' : ''" jstcache="20" class="">
-                    <li jsselect="suggestionsSummaryList" jsvalues=".innerHTML:summary" jstcache="22" jsinstance="0">Ryan harus menghindari si Boedi agar selamat hidupnya</li><li jsselect="suggestionsSummaryList" jsvalues=".innerHTML:summary" jstcache="22" jsinstance="*1">Hati-hati dengan bibir Boedi yang sedang terbang, BAHAYA!!!</li>
-                  </ul>
-                </div>
-                <div class="error-code" jscontent="errorCode" jstcache="18">budibudibudibudi</div>
-                <p id="error-information-popup-close" jstcache="0">
-                  <a class="link-button" jscontent="closeDescriptionPopup" onclick="toggleErrorInformationPopup();" jstcache="21">null</a>
-                </p>
-              </div>
-            </div>
-          </div>
+    <div id="main-frame-error" class="interstitial-wrapper">
+        <div id="main-content">
+            <div class="icon icon-offline" alt=""></div>
         </div>
-        <div id="diagnose-frame" class="hidden" jstcache="0"></div>
-        <div id="download-links-wrapper" class="hidden" jstcache="0">
-          <div id="download-link-wrapper" jstcache="0">
-            <a id="download-link" class="link-button" onclick="downloadButtonClick()" jsselect="downloadButton" jscontent="msg" jsvalues=".disabledText:disabledMsg" jstcache="7" style="display: none;">
-            </a>
-          </div>
-          <div id="download-link-clicked-wrapper" class="hidden" jstcache="0">
-            <div id="download-link-clicked" class="link-button" jsselect="downloadButton" jscontent="disabledMsg" jstcache="12" style="display: none;">
-            </div>
-          </div>
-        </div>
-        <div id="save-page-for-later-button" class="hidden" jstcache="0">
-          <a class="link-button" onclick="savePageLaterClick()" jsselect="savePageLater" jscontent="savePageMsg" jstcache="11" style="display: none;">
-          </a>
-        </div>
-        <div id="cancel-save-page-button" class="hidden" onclick="cancelSavePageClick()" jsselect="savePageLater" jsvalues=".innerHTML:cancelMsg" jstcache="5" style="display: none;">
-        </div>
-        <div id="offline-content-list" class="list-hidden" hidden="" jstcache="0">
-          <div id="offline-content-list-visibility-card" onclick="toggleOfflineContentListVisibility(true)" jstcache="0">
-            <div id="offline-content-list-title" jsselect="offlineContentList" jscontent="title" jstcache="13" style="display: none;">
-            </div>
-            <div jstcache="0">
-              <div id="offline-content-list-show-text" jsselect="offlineContentList" jscontent="showText" jstcache="15" style="display: none;">
-              </div>
-              <div id="offline-content-list-hide-text" jsselect="offlineContentList" jscontent="hideText" jstcache="16" style="display: none;">
-              </div>
-            </div>
-          </div>
-          <div id="offline-content-suggestions" jstcache="0"></div>
-          <div id="offline-content-list-action" jstcache="0">
-            <a class="link-button" onclick="launchDownloadsPage()" jsselect="offlineContentList" jscontent="actionText" jstcache="14" style="display: none;">
-            </a>
-          </div>
-        </div>
-      </div>
         <div id="offline-resources">
             <img id="offline-resources-1x" src="assets/default_100_percent/100-offline-sprite.png">
             <img id="offline-resources-2x" src="assets/default_200_percent/200-offline-sprite.png">
@@ -85,7 +24,6 @@
                 <audio id="offline-sound-reached" src="data:audio/mpeg;base64,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"></audio>
             </template>
         </div>
-            <div class="runner-container" style="width: 600px; height: 150px;"><canvas class="runner-canvas" width="600" height="150" style="width: 600px; height: 150px;"></canvas></div>
     </div>
 </body>
     
