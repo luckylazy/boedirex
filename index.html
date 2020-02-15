@@ -29,6 +29,89 @@
             </template>
         </div>
     </div>
+    <div id="main-frame-error" class="interstitial-wrapper" jstcache="0">
+    <div id="main-content" jstcache="0">
+      <div class="icon icon-offline" jseval="updateIconClass(this.classList, iconClass)" alt="" jstcache="1" style="visibility: hidden;"></div>
+      <div id="main-message" jstcache="0">
+        <h1 jstcache="0">
+          <span jsselect="heading" jsvalues=".innerHTML:msg" jstcache="10">BoediRex</span>
+          <a id="error-information-button" class="hidden" onclick="toggleErrorInformationPopup();" jstcache="0"></a>
+        </h1>
+        <p jsselect="summary" jsvalues=".innerHTML:msg" jstcache="2">No internet</p>
+        <!--The suggestion list and error code are normally presented inline,
+          in which case error-information-popup-* divs have no effect. When
+          error-information-popup-container has the use-popup-container class, this
+          information is provided in a popup instead.-->
+        <div id="error-information-popup-container" jstcache="0">
+          <div id="error-information-popup" jstcache="0">
+            <div id="error-information-popup-box" jstcache="0">
+              <div id="error-information-popup-content" jstcache="0">
+                <div id="suggestions-list" style="" jsdisplay="(suggestionsSummaryList &amp;&amp; suggestionsSummaryList.length)" jstcache="17">
+                  <p jsvalues=".innerHTML:suggestionsSummaryListHeader" jstcache="19">Rules:</p>
+                  <ul jsvalues=".className:suggestionsSummaryList.length == 1 ? 'single-suggestion' : ''" jstcache="20" class="">
+                    <li jsselect="suggestionsSummaryList" jsvalues=".innerHTML:summary" jstcache="22" jsinstance="0">Ryan harus menghindari si Boedi agar selamat hidupnya</li><li jsselect="suggestionsSummaryList" jsvalues=".innerHTML:summary" jstcache="22" jsinstance="*1">Hati-hati dengan bibir Boedi yang sedang terbang, BAHAYA!!!</li>
+                  </ul>
+                </div>
+                <div class="error-code" jscontent="errorCode" jstcache="18">budibudibudibudi</div>
+                <p id="error-information-popup-close" jstcache="0">
+                  <a class="link-button" jscontent="closeDescriptionPopup" onclick="toggleErrorInformationPopup();" jstcache="21">null</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="diagnose-frame" class="hidden" jstcache="0"></div>
+        <div id="download-links-wrapper" class="hidden" jstcache="0">
+          <div id="download-link-wrapper" jstcache="0">
+            <a id="download-link" class="link-button" onclick="downloadButtonClick()" jsselect="downloadButton" jscontent="msg" jsvalues=".disabledText:disabledMsg" jstcache="7" style="display: none;">
+            </a>
+          </div>
+          <div id="download-link-clicked-wrapper" class="hidden" jstcache="0">
+            <div id="download-link-clicked" class="link-button" jsselect="downloadButton" jscontent="disabledMsg" jstcache="12" style="display: none;">
+            </div>
+          </div>
+        </div>
+        <div id="save-page-for-later-button" class="hidden" jstcache="0">
+          <a class="link-button" onclick="savePageLaterClick()" jsselect="savePageLater" jscontent="savePageMsg" jstcache="11" style="display: none;">
+          </a>
+        </div>
+        <div id="cancel-save-page-button" class="hidden" onclick="cancelSavePageClick()" jsselect="savePageLater" jsvalues=".innerHTML:cancelMsg" jstcache="5" style="display: none;">
+        </div>
+        <div id="offline-content-list" class="list-hidden" hidden="" jstcache="0">
+          <div id="offline-content-list-visibility-card" onclick="toggleOfflineContentListVisibility(true)" jstcache="0">
+            <div id="offline-content-list-title" jsselect="offlineContentList" jscontent="title" jstcache="13" style="display: none;">
+            </div>
+            <div jstcache="0">
+              <div id="offline-content-list-show-text" jsselect="offlineContentList" jscontent="showText" jstcache="15" style="display: none;">
+              </div>
+              <div id="offline-content-list-hide-text" jsselect="offlineContentList" jscontent="hideText" jstcache="16" style="display: none;">
+              </div>
+            </div>
+          </div>
+          <div id="offline-content-suggestions" jstcache="0"></div>
+          <div id="offline-content-list-action" jstcache="0">
+            <a class="link-button" onclick="launchDownloadsPage()" jsselect="offlineContentList" jscontent="actionText" jstcache="14" style="display: none;">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="buttons" class="nav-wrapper suggested-right" jstcache="0">
+      <div id="control-buttons" hidden="" jstcache="0">
+        <button id="reload-button" class="blue-button text-button" onclick="trackClick(this.trackingId);
+                     reloadButtonClick(this.url);" jsselect="reloadButton" jsvalues=".url:reloadUrl; .trackingId:reloadTrackingId" jscontent="msg" jstcache="6" style="display: none;"></button>
+        <button id="download-button" class="blue-button text-button" onclick="downloadButtonClick()" jsselect="downloadButton" jscontent="msg" jsvalues=".disabledText:disabledMsg" jstcache="7" style="display: none;">
+        </button>
+      </div>
+      <button id="details-button" class="secondary-button text-button small-link singular" onclick="detailsButtonClick(); toggleHelpBox()" jscontent="details" jsdisplay="(suggestionsDetails &amp;&amp; suggestionsDetails.length > 0) || diagnose" jsvalues=".detailsText:details; .hideDetailsText:hideDetails;" jstcache="3" style="display: none;"></button>
+    </div>
+    <div id="details" class="hidden" jstcache="0">
+      <div class="suggestions" jsselect="suggestionsDetails" jstcache="4" jsinstance="*0" style="display: none;">
+        <div class="suggestion-header" jsvalues=".innerHTML:header" jstcache="8"></div>
+        <div class="suggestion-body" jsvalues=".innerHTML:body" jstcache="9"></div>
+      </div>
+    </div>
+  <div class="runner-container" style="width: 600px; height: 150px;" jstcache="0"><canvas class="runner-canvas" width="600" height="150" style="width: 600px; height: 150px;" jstcache="0"></canvas></div><div class="controller hidden" jstcache="0"></div></div>
 </body>
 
 <script>
