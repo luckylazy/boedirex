@@ -159,15 +159,15 @@
      */
     Runner.spriteDefinition = {
         LDPI: {
-            CACTUS_LARGE: { x: 331, y: 1 },
-            CACTUS_SMALL: { x: 227, y: 1 },
+            CACTUS_LARGE: { x: 330, y: 1 },
+            CACTUS_SMALL: { x: 226, y: 1 },
             CLOUD: { x: 85, y: 1 },
             HORIZON: { x: 2, y: 53 },
             MOON: { x: 483, y: 1 },
             PTERODACTYL: { x: 134, y: 1 },
             RESTART: { x: 2, y: 1 },
             TEXT_SPRITE: { x: 654, y: 1 },
-            TREX: { x: 847, y: 1 },
+            TREX: { x: 848, y: 1 },
             STAR: { x: 644, y: 1 }
         },
         HDPI: {
