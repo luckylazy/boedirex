@@ -17,6 +17,8 @@ html, body {
 
 .icon-offline {
   content: -webkit-image-set( url(assets/default_100_percent/icon_100.png) 1x, url(assets/default_200_percent/icon_200.png) 2x);
+  min-width: 72px;
+  min-height: 72px;
   position: relative;
 }
 
