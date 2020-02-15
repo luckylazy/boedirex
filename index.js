@@ -160,7 +160,7 @@
     Runner.spriteDefinition = {
         LDPI: {
             CACTUS_LARGE: { x: 329, y: 1 },
-            CACTUS_SMALL: { x: 228, y: 1 },
+            CACTUS_SMALL: { x: 227, y: 1 },
             CLOUD: { x: 85, y: 1 },
             HORIZON: { x: 2, y: 53 },
             MOON: { x: 483, y: 1 },
