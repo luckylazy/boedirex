@@ -159,16 +159,16 @@
      */
     Runner.spriteDefinition = {
         LDPI: {
-            CACTUS_LARGE: { x: 330, y: 3 },
-            CACTUS_SMALL: { x: 226, y: 3 },
-            CLOUD: { x: 84, y: 3 },
-            HORIZON: { x: 2, y: 55 },
-            MOON: { x: 482, y: 3 },
-            PTERODACTYL: { x: 133, y: 3 },
-            RESTART: { x: 2, y: 3 },
-            TEXT_SPRITE: { x: 653, y: 3 },
-            TREX: { x: 846, y: 3 },
-            STAR: { x: 643, y: 3 }
+            CACTUS_LARGE: { x: 330, y: 1 },
+            CACTUS_SMALL: { x: 226, y: 1 },
+            CLOUD: { x: 84, y: 1 },
+            HORIZON: { x: 2, y: 53 },
+            MOON: { x: 482, y: 1 },
+            PTERODACTYL: { x: 133, y: 1 },
+            RESTART: { x: 2, y: 1 },
+            TEXT_SPRITE: { x: 653, y: 1 },
+            TREX: { x: 846, y: 1 },
+            STAR: { x: 643, y: 1 }
         },
         HDPI: {
             CACTUS_LARGE: { x: 652, y: 2 },
